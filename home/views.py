@@ -1,4 +1,4 @@
 from django.shortcuts import HttpResponse
 
 def index(request):
-    return HttpResponse("This is home page")
+    return HttpResponse("Hello, this is the home page, <a href='./polls/'>Polls</a>")
