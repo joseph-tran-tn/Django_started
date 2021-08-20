@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel"stylesheet" href="{% static 'home/style.css' %}" />
+</head>
+<body>
+  <div class="menu">
+    <ul class="menu-parent">
+      <li><a href="/">Home</a></li>
+      <li><a href="/post/">Post</a>
+        <ul class="menu-sub">
+          <li><a href="/post/1/">Post 1</a></li>
+          <li><a href="/post/2/">Post 2</a></li>
+        </ul>
+      </li>
+      <li><a href="/polls/">Polls</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

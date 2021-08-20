@@ -19,7 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', include('home.urls')),
-    path('polls/', include('polls.urls')),
-    path('post/', include('post.urls')),
     path('admin/', admin.site.urls),
 ]
