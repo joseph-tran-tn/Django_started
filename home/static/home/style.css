@@ -1,5 +1,91 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  transition: .3s ease opacity,
+    .3s ease color,
+    .3s ease background;
+}
+
 body {
-  background: #333;
   font-family: arial;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #103E2E;
+  color: #eee;
+}
+
+.logo {
+  display: block;
+}
+
+.menu a {
+  color: #eee;
+}
+
+.menu-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-parent li {
+  position: relative;
+  list-style: none;
+}
+
+.menu-parent li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu-parent li a:hover {
+  opacity: 0.8;
+}
+
+.menu-parent li ul.menu-sub {
+  display: none;
+  top: 100%;
+  right: 0;
+  position: absolute;
+  padding: 5px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 5px;
+}
+
+.menu-parent li:hover ul.menu-sub {
+  display: block;
+}
+
+.menu-parent li ul.menu-sub li {}
+
+.menu-parent li ul.menu-sub li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu-parent li ul.menu-sub li a {
+  white-space: nowrap;
+  padding: 5px 20px;
+  background: #222;
+  border-radius: 4px;
+}
+
+.menu-parent li ul.menu-sub li a:hover {
+  background: #000;
+  opacity: 1;
+}
+
+.content {
+  max-width: 800px;
+  margin: 50px auto;
 }
