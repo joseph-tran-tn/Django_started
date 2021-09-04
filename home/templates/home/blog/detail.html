@@ -1,0 +1,8 @@
+{% extends 'home/base.html' %}
+  {% block content %}
+    <h1>{{pD.title}}</h1>
+    <article>
+      {{pD.body|linebreaks}}
+    </article>
+    <p><a href="{%url 'home:blog'%}">Back to list</a></p>
+  {% endblock %}

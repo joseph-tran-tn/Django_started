@@ -89,3 +89,15 @@ body {
   max-width: 800px;
   margin: 50px auto;
 }
+
+.content a {
+  color: #103E2E;
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
