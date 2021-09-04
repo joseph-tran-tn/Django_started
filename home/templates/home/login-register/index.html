@@ -1,0 +1,15 @@
+{% extends 'home/base.html' %}
+  {% block content %}
+    <h1>Login</h1>
+    <form action="{% url 'home:loginRegister' %}" method="post">
+      {% csrf_token %}
+      {{LoginForm.as_p}}
+      <button name="login" value="login">Login</button>
+    </form>
+    <h1>Register</h1>
+    <form action="{% url 'home:loginRegister' %}" method="post">
+      {% csrf_token %}
+      {{RegisterForm.as_p}}
+      <button name="register" value="register">Register</button>
+    </form>
+  {% endblock %}

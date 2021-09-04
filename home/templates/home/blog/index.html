@@ -1,7 +1,7 @@
 {% extends 'home/base.html' %}
   {% block content %}
     <h1>This is a blog page</h1>
-    {% for item in pF %}
+    {% for item in blogs %}
       <p><a href="{% url 'home:blogDetail' item.id %}">{{item.title}}</a></p>
     {% endfor %}
   {% endblock %}

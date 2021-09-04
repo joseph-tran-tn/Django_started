@@ -101,3 +101,31 @@ body {
 .content p {
   margin-bottom: 1rem;
 }
+
+.content form {
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.content form input,
+.content form textarea {
+  padding: 5px;
+}
+
+.content form button {
+  height: 34px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin-left: 210px;
+}
+
+.content form p {
+  display: flex;
+  gap: 10px;
+}
+
+.content form p label {
+  width: 200px;
+}
