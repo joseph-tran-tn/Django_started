@@ -75,3 +75,7 @@ def logoutUser(request):
 
 def poll(request):
     return render(request, 'home/poll/index.html')
+
+
+def upload(request):
+    return render(request, 'home/upload/index.html')

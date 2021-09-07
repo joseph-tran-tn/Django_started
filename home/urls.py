@@ -9,4 +9,5 @@ urlpatterns = [
     path('member/', views.member, name='member'),
     path('logout/', views.logoutUser, name='logout'),
     path('poll/', views.poll, name='poll'),
+    path('upload/', views.upload, name='upload'),
 ]
